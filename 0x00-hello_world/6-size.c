@@ -1,5 +1,8 @@
 #include<stdio.h>
-
+/**
+* main-print various type
+* Return: always 0
+*/
 int main(void)
 {
 char r;
