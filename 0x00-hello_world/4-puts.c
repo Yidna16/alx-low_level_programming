@@ -1,12 +1,12 @@
 #include <stdio.h>
-
+/**
+* main-display using puts
+* Return: always 0
+*/
 int main(void)
 
 {
-  getchar();
-   letter='d'; 
-  putchar(letter);
-   letter='k';
-  putchar(letter);
-  return(0);
-}	
+char ch[] = "\"Programming is like building a multilingual puzzle";
+puts(ch);
+return (0);
+}
