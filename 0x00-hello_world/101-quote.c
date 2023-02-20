@@ -1,13 +1,11 @@
 #include<stdio.h>
-
+#include <unistd.h>
+/**
+* main-display text
+* Return: sucssesful (1)
+*/
 int main(void)
 {
-int ch[]; 
-ch = {'a'};
-while (ch != '\n' && ch != '\0')
-{
-putchar(ch);
-ch++;
-}
-return (0);	
+fput{"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout};
+return (1);	
 }	
