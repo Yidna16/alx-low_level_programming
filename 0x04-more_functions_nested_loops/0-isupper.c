@@ -1,3 +1,4 @@
+include "main.h"
 /**
 * _isupper-tell if digite or not
 * Return: 0
