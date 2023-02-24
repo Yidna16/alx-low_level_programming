@@ -1,17 +1,17 @@
 #include "main.h"
+
 /**
-* _isdigit-tell if digit or not
-* Return: 0
-*/
+ * _isdigit - check the code for ALX School students.
+ *
+ * @c: is an integer param
+ *
+ * Return: Always 0.
+ */
+
+
 int _isdigit(int c)
 {
-if (c > 47 && c < 59)
-{
-return (1);
+
+return (c >= 48 && c <= 57);
 }
-else
-{
-return (0);
-}
-return (0);
-}
+
