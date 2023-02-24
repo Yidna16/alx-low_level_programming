@@ -1,3 +1,4 @@
+#include "main.h"
 /**
 * _isdigit-tell if digit or not
 * Return: 0
@@ -12,4 +13,5 @@ else
 {
 return (0);
 }
+return (0);
 }
