@@ -1,16 +1,18 @@
-include "main.h"
+#include "main.h"
+
 /**
-* _isupper-tell if digite or not
-* Return: 0
-*/
+ * _isupper - check the code for ALX School students.
+ *
+ * @c: is an integer param
+ *
+ * Return: Always 0.
+ */
+
+
 int _isupper(int c)
 {
 
-if (c < 97)
-{
-return (1);
+	return (c >= 65 && c <= 90);
 }
-else
-return (0);
 
 }
