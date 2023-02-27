@@ -4,7 +4,7 @@
 * @s: input
 * Return: 0
 */
- int _strlen(char *s)
+int _strlen(char *s)
 {
 int m = 0;
 while (*s++)
