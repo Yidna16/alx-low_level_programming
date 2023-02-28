@@ -7,11 +7,19 @@
 */
 void print_array(int *a, int n)
 {
-for (n = 0;  a[n] != '\0'; n++)
+int c;
+while (a[n++])
+{
+c++;
+}
+for (n = 0;  a[n] < c-1; n++)
+{
+if (a[n] != c-1)
 {
 printf("%d", a[n]);
 printf(",");
 printf(" ");
+}
 }
 printf("\n");
 }
