@@ -1,5 +1,6 @@
 /**
  * string_toupper-change to upper case
+ *@s:input
  * Return:char value
 */
 char *string_toupper(char *s)
