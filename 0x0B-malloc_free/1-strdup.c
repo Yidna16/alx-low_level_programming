@@ -14,16 +14,16 @@ if (str == 0x00)
 {
 return (0x00);
 }
-i = malloc(sizeof(char) * j);
+i = malloc(sizeof(char) * k);
 if (i == 0x00)
 {
 return (0x00);
 }
-k = 0;
-while (k <= j)
+j = 0;
+while (k >= j)
 {
-i[k] = str[k];
-k++;
+i[j] = str[j];
+j++;
 }
 return (i);
 }
