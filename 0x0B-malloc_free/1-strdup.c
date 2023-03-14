@@ -10,6 +10,7 @@ char *i;
 int j = 0, k = 0;
 while (*(str + j))
 j++, k++;
+k++;
 if (str == NULL)
 {
 return (NULL);
