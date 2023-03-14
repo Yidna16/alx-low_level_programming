@@ -20,7 +20,7 @@ if (i == NULL)
 return (NULL);
 }
 j = 0;
-while (k >= j)
+while (j < k)
 {
 i[j] = str[j];
 j++;
