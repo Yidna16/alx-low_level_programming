@@ -20,4 +20,5 @@ while (j < size)
 j++;
 }
 return (i);
+free (i);
 }
