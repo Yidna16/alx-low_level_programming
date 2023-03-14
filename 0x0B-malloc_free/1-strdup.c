@@ -12,14 +12,10 @@ while (*(str + j))
 j++, k++;
 k++;
 if (str == NULL)
-{
 return (NULL);
-}
 i = malloc(sizeof(char) * k);
 if (i == NULL)
-{
 return (NULL);
-}
 j = 0;
 while (j < k)
 {
