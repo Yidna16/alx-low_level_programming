@@ -6,21 +6,27 @@
 */
 char *_strdup(char *str)
 {
-char *i;
-int j = 0, k = 0;
-while (*(str + j))
-j++, k++;
-k++;
+char *duplicate_str;
+int i = 0, len = 0;
+
 if (str == NULL)
 return (NULL);
-i = malloc(sizeof(char) * k);
-if (i == NULL)
+
+while (*(str + i))
+len++, i++;
+len++;
+
+duplicate_str = malloc(sizeof(char) * len);
+
+if (duplicate_str == NULL)
 return (NULL);
-j = 0;
-while (j < k)
+
+i = 0;
+while (i < len)
 {
-i[j] = str[j];
-j++;
+*(duplicate_str + i) = *(str + i);
+i++;
 }
-return (i);
+
+return (duplicate_str);
 }
