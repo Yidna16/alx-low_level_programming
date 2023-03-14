@@ -14,11 +14,14 @@ if (size == 0)
 return (0x00);
 }
 i = (char *) malloc(sizeof(char) * size);
+if (i == 0x00)
+{
+return (0x00);
+}
 while (j < size)
 {
 *(i + j) = c;
 j++;
 }
 return (i);
-free (i);
 }
