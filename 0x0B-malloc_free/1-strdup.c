@@ -10,14 +10,14 @@ char *i;
 int j = 0, k = 0;
 while (*(str + j))
 j++, k++;
-if (str == 0x00)
+if (str == NULL)
 {
-return (0x00);
+return (NULL);
 }
 i = malloc(sizeof(char) * k);
-if (i == 0x00)
+if (i == NULL)
 {
-return (0x00);
+return (NULL);
 }
 j = 0;
 while (k >= j)
