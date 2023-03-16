@@ -19,9 +19,10 @@ i++;
 while (s2[j] != '\0')
 j++;
 if (n >= j)
-p = malloc(sizeof(char) * (i + j) +1);
-else
-p = malloc(sizeof(char) * (i + n) + 1);
+{
+n = j;
+}
+p = malloc(sizeof(char) * (i + n + 1));
 if (p == NULL)
 return (NULL);
 l = 0;
