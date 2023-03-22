@@ -13,6 +13,8 @@ if (size <= 0)
 {
 return (-1);
 }
+if (array != NULL && cmp != NULL)
+{
 while (i < size)
 {
 if (cmp(array[i]))
@@ -20,6 +22,7 @@ if (cmp(array[i]))
 return (i);
 }
 i++;
+}
 }
 return (k);
 }
