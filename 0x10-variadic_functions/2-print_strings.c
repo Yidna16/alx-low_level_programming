@@ -23,11 +23,11 @@ else
 {
 printf("(nil)");
 }
-if (i != n - 1)
+if (i != (n - 1) && separator != NULL)
 {
 printf("%s", separator);
 }
 }
-va_end(d);
 printf("\n");
+va_end(d);
 }
