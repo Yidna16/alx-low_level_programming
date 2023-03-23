@@ -3,6 +3,7 @@
  * print_numbers-print numbers have a string between them
  * @separator:the string separat numbers
  * @n:numbers pass to print
+ * @...:list of numbers
  * Return:nothing
 */
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -20,4 +21,5 @@ printf("%s", separator);
 }
 }
 printf("\n");
+va_end(d);
 }
