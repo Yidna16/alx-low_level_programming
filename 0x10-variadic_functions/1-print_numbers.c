@@ -15,7 +15,7 @@ unsigned int i, x = 0;
 va_start(d, n);
 for (i = 0; i < n; i++)
 {
-x = va_arg(d, const unsigned int);
+x = va_arg(d, int);
 printf("%d", x);
 if (i != n - 1)
 {
