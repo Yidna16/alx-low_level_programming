@@ -14,6 +14,6 @@ if (*head == NULL)
 return (0);
 }
 p = (*head)->n;
-free_listint2(head);
+*head = NULL;
 return (p);
 }
