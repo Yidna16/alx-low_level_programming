@@ -13,9 +13,11 @@ p = *head;
 while (p != NULL)
 {
 i = p->next;
+if (p != *head)
+{
+*head = NULL;
+}
 free(p);
 p = i;
 }
-*head = NULL;
-head = NULL;
 }
