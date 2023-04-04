@@ -27,6 +27,14 @@ for (j = 0; j < index - 1; j++)
 {
 p = p->next;
 }
+if (p->next->next == NULL)
+{
+i = p->next->next;
+p = p->next;
+p->next = NULL;
+free(i);
+return (1);
+}
 i = p->next->next;
 o = p->next;
 p->next = i;
