@@ -14,12 +14,9 @@ unsigned int j;
 listint_t *p;
 listint_t *i = malloc(sizeof(listint_t));
 p = *head;
-if ((*head)->next == NULL)
+if (p == NULL && i == NULL)
 {
-*head = i;
-i->n = n;
-i->next = NULL;
-return (i);
+return (NULL);
 }
 for (j = 0; j < idx-1; j++)
 {
