@@ -17,4 +17,5 @@ free(p);
 p = i;
 }
 *head = NULL;
+head = NULL;
 }
