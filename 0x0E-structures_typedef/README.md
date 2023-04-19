@@ -1,1 +1,0 @@
-learnig about structurs
