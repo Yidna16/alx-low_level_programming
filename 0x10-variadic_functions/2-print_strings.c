@@ -27,6 +27,6 @@ else
 printf("nil");
 }
 }
-printf("\n");
 va_end(d);
+printf("\n");
 }
