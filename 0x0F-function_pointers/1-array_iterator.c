@@ -1,4 +1,5 @@
 #include <stddef.h>
+#include <stdlib.h>
 /**
  * array_iterator-executes a function on each element of an array
  * @array:array
@@ -15,5 +16,5 @@ for (i = 0; array[i] < array[size]; i++)
 action(array[i]);
 }
 }
-
+exit(1);
 }
