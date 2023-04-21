@@ -16,5 +16,5 @@ for (i = 0; array[i] < array[size]; i++)
 action(array[i]);
 }
 }
-exit(1);
+
 }
