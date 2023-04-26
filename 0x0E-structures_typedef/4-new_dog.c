@@ -7,7 +7,7 @@
 */
 int _strlen(char *c)
 {
-int i;
+int i = 0;
 while (c[i] != '\0')
 {
 i++;
@@ -22,12 +22,13 @@ return (i);
 */
 char *_strcpy(char *to, char *from)
 {
-int i;
-while (from[i] != NULL)
+int i = 0;
+while (from[i] != '\0')
 {
 to[i] = from[i];
 i++;
 }
+to[i] = '\0';
 return (to);
 }
 /**
@@ -39,26 +40,26 @@ return (to);
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
+dog_t *p;
 if (name == NULL || age < 0 || owner == NULL)
 {
 return (NULL);
 }
-dog_t *p = malloc(sizeof(dog_t));
+p = malloc(sizeof(dog_t));
 if (p == NULL)
 {
 return (NULL);
 }
-p->name = malloc(sizeof(char) * _strlen(name) + 1);
+p->name = malloc(sizeof(char) * (_strlen(name) + 1));
 if (p->name == NULL)
 {
-free(name);
 free(p);
 return (NULL);
 }
-p->owner = malloc(sizeof(char) * _strlen(owner) + 1);
+p->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 if (p->owner == NULL)
 {
-free(owner);
+free(p->name);
 free(p);
 return (NULL);
 }
