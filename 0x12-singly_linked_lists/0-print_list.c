@@ -14,15 +14,13 @@ while (h != NULL)
 if (h->str != NULL)
 {
 printf("[%d] %s\n", h->len, h->str);
-i++;
-h = h->next;
 }
 else
 {
 printf("[0] (nil)\n");
+}
 i++;
 h = h->next;
-}
 }
 return (i);
 }
