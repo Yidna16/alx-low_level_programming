@@ -16,7 +16,7 @@ if (p == NULL)
 {
 return (NULL);
 }
-while (p->next != NULL)
+while (p != NULL)
 {
 p = p->next;
 j++;
