@@ -10,24 +10,27 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 unsigned int i = 0, j = 0;
 listint_t *p;
-p = head;
+listint_t *h;
+h = head;
 p = malloc(sizeof(listint_t));
 if (p == NULL)
 {
 return (NULL);
 }
-while (p != NULL)
+while (h->next != NULL)
 {
-p = p->next;
+h = h->next;
 j++;
 }
-p = head;
-if (j <= index)
+if (j >= index)
 {
+h = head;
 for (; i < index; i++)
 {
-p = p->next;
+h = h->next;
 }
+p->next = h;
+p->n = h->n;
 return (p);
 }
 return (NULL);
