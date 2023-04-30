@@ -18,6 +18,7 @@ free(*head);
 }
 free(p);
 *head = NULL;
+head = NULL;
 }
 else exit(1);
 }
