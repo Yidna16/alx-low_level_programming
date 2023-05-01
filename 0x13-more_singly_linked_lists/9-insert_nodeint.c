@@ -17,10 +17,10 @@ if (h == NULL)
 {
 return (NULL);
 }
-if (*head == NULL)
+if (idx == 0)
 {
+h->next = head->next;
 *head = h;
-h->next = NULL;
 h->n = n;
 return (h);
 }
