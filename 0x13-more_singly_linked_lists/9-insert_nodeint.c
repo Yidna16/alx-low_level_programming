@@ -13,14 +13,10 @@ unsigned int i = 0;
 listint_t *p;
 listint_t *h;
 if (idx == 0)
-{
 return (NULL);
-}
 h = malloc(sizeof(listint_t));
 if (h == NULL)
-{
 return (NULL);
-}
 if (*head == NULL)
 {
 *head = h;
