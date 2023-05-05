@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "main.h"
 /**
  * binary_to_uint-convert binary to decimal
